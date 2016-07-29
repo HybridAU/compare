@@ -9,9 +9,9 @@ import os.path
 import hashlib
 
 # Original Directory
-FIRST_DIRECTORY = '/home/michael/directory-old-files'
+ORIGINAL_DIRECTORY = '/home/michael/directory-old-files'
 # Directory with new files.
-SECOND_DIRECTORY = '/home/michael/directory-new-files'
+NEW_DIRECTORY = '/home/michael/directory-new-files'
 
 original_files = set()
 new_files = []
