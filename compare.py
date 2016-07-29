@@ -4,6 +4,7 @@
 Run through two directories (including sub directories) find files that are the
 second directory but not in the first.
 """
+
 import os
 import os.path
 import hashlib
@@ -18,8 +19,8 @@ new_files = []
 
 
 # Run through the original directory and creates an md5 sum each of the files.
-# md5 is inscure because of known hash colisions, however because we are not
-# trying to validate the file's contents so it's good enough, faster and more
+# md5 is inscure because of known hash collisions, however we are not trying
+# to validate the file's contents so it's good enough, faster and more
 # memory efficent than SHA256.
 for dirpath, dirnames, filenames in os.walk(ORIGINAL_DIRECTORY):
     for filename in filenames:
