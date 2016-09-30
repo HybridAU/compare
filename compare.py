@@ -40,9 +40,9 @@ def compare_two_directories(settings):
     original_files = set()
 
     # Run through the original directory and creates an MD5 sum each of the
-    # files. MD5 is inscure because of known hash collisions, however we are
+    # files. MD5 is insecure because of known hash collisions, however we are
     # not trying to validate the file's contents so it's good enough, faster
-    # and more memory efficent than SHA256.
+    # and more memory efficient than SHA256.
     for dirpath, dirnames, filenames in os.walk(settings.old_files):
         for filename in filenames:
             file_path = os.path.join(dirpath, filename)
